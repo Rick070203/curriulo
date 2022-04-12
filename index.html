@@ -10,60 +10,50 @@
     
 <style>
     *{
-        margin: 0;
-        padding: 0;
+        margin: 0 auto;
         list-style: none;
     }
     body{
         width: 100%;
         color: #069;
         text-align: center;
-        min-height: 100vh;
         font-weight: bold;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        font-family: Verdana;
     }
     .container{
         width: 50%;
         overflow: scroll;
-        height: 90vh;
+        height: 80em;
         padding: 15px 2%;
-        box-shadow: 0 0 5px #069;
+        box-shadow: 0 0 10px blue;
     }
     .container::-webkit-scrollbar{
         width: 12px;
         border: 1px solid #069;
     }
     .container::-webkit-scrollbar-thumb{
-        background-color: #069;
+        background-color: darkblue;
         border-radius: 6px;
     }
     .hr_dados1{
-        border-top: medium dashed #069;
-        border-bottom: medium dashed #069;
+        border-top: medium dashed;
+        border-bottom: medium dashed;
         height: 5px;
         overflow: visible;
-        padding: 0;
-        text-align: center;
     }
     .hr_dados1::after{
         content: "Rafael Bastos Hocsman";
-        font-size: 1.3em;
+        font-size: 1.5em;
         padding: 0 0.3em;
         top: -0.6em;
         background: #fff;
-        display: inline;
         position: relative;
     }
     .hr_dados2{
-        border-top: medium dashed #069;
-        border-bottom: medium dashed #069;
+        border-top: medium dashed;
+        border-bottom: medium dashed;
         height: 5px;
         overflow: visible;
-        padding: 0;
-        text-align: center;
     }
     .hr_dados2::after{
         content: "Dados Pessoais";
@@ -71,16 +61,13 @@
         padding: 0 0.3em;
         top: -0.6em;
         background: #fff;
-        display: inline;
         position: relative;
     }
     .hr_dados3{
-        border-top: medium dashed #069;
-        border-bottom: medium dashed #069;
+        border-top: medium dashed;
+        border-bottom: medium dashed;
         height: 5px;
         overflow: visible;
-        padding: 0;
-        text-align: center;
     }
     .hr_dados3::after{
         content: "Informações de contato";
@@ -88,16 +75,13 @@
         padding: 0 0.3em;
         top: -0.6em;
         background: #fff;
-        display: inline;
         position: relative;
     }
     .hr_dados4{
-        border-top: medium dashed #069;
-        border-bottom: medium dashed #069;
+        border-top: medium dashed;
+        border-bottom: medium dashed;
         height: 5px;
         overflow: visible;
-        padding: 0;
-        text-align: center;
     }
     .hr_dados4::after{
         content: "Formação complementar";
@@ -105,16 +89,13 @@
         padding: 0 0.3em;
         top: -0.6em;
         background: #fff;
-        display: inline;
         position: relative;
     }
     .hr_dados5{
-        border-top: medium dashed #069;
-        border-bottom: medium dashed #069;
+        border-top: medium dashed;
+        border-bottom: medium dashed;
         height: 5px;
         overflow: visible;
-        padding: 0;
-        text-align: center;
     }
     .hr_dados5::after{
         content: "Mais informações";
@@ -122,7 +103,6 @@
         padding: 0 0.3em;
         top: -0.6em;
         background: #fff;
-        display: inline;
         position: relative;
     }
 </style>
@@ -130,75 +110,45 @@
 <body>
     <div class="container"><br><br>
         <hr class="hr_dados1"><br><br>
-            <div class="row"> 
-                <div class="col-md-6 text-center">
-                <section> 
-                        <img class="foto-perfil" src="asssets/img/rafinha.jpg.jpg" width="250"height="250">
-                        <hr class="hr_01">
-                    </section>
-                </div>
+            <img src="asssets/img/rafinha.jpg.jpg" width="250"height="250">
+            <hr class="hr_01" style="width: 30rem;">
+        <div style="width: 18rem;"><br><br>
+            <hr class="hr_dados2"><br><br>
+            <h4>Nome: Rafael Bastos Hocsman<br><br>
+            <h4>Data de Nascimento: 05/12/1976<br><br>
+            <h4>RG: 819729873-010<br><br>
+            <h4>Rua Guaxupé 34590 Apto 34, Nações Unidas Sabará - MG<br><br>
+            <hr class="hr_02">
         </div>
-        <div class="col-md-6 text-center">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-header"><br><br>
-                        <ul class="list-group list-group-flush">
-                            <hr class="hr_dados2"><br><br>
-                            <li class="list-group-item">Nome: Rafael Bastos Hocsman</li><br>
-                            <li class="list-group-item">Data de Nascimento: 05/12/1976</li><br>
-                            <li class="list-group-item">RG: 819729873-010</li><br>
-                            <li class="list-group-item">Rua Guaxupé 34590 Apto 34, Nações Unidas Sabará - MG</li><br>
-                            <hr class="hr_01">
-                        </ul>
-                    </div>
-                </div>
+        <div style="width: 18rem;"><br><br>
+            <hr class="hr_dados3"><br><br>
+            <h4>Telefone: 011-94190217<br><br>
+            <h4>Email: rafaelhocs@bol.com.br<br><br>
+            <h4>Estado Civil: solteiro<br><br>
+            <hr class="hr_03"><br><br>
         </div>
-        <div class="text-center col-md-6">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-header"><br><br>
-                        <ul class="list-group list-group-flush">
-                            <hr class="hr_dados3"><br><br>
-                            <li class="list-group-item">Telefone: 011-94190217</li><br>
-                            <li class="list-group-item">Email: rafaelhocs@bol.com.br</li><br>
-                            <li class="list-group-item">solteiro</li><br>
-                            <hr class="hr_02"><br><br>
-                        </ul>
-                    </div>
-                </div>
+        <div style="width: 18rem;">
+            <hr class="hr_dados4"><br><br>
+            <h4>Programação em basic: data control 1991<br><br>
+            <h4>Inglês fuente: Doploma advanced 8 do Yázigi Escola de idiomas<br><br>
+            <h4>Defesa Pessoal Avançada: Escola de Krav Magá Exodus-Canoas(SP)<br><br>
+            <h4>A Arte da Culinária Japonesa-pratos quentes:Senac(SP)<br><br>
+            <h4>Iluminação Resdencial.Senastec(RS)<br><br>
+            <hr class="hr_04"><br><br>
         </div>
-        <div class="col-md-6 text-center">
-            <div class="card" style="width: 18rem;">
-                <div class="card-header"><br>
-                    <ul class="list-group list-group-flush">
-                        <hr class="hr_dados4"><br><br>
-                            <li class="list-group-item">Programação em basic: data control 1991</li><br>
-                            <li class="list-group-item">Inglês fuente: Doploma advanced 8 do Yázigi Escola de idiomas</li><br>
-                            <li class="list-group-item">Defesa Pessoal Avançada: Escola de Krav Magá Exodus-Canoas(SP)</li><br>
-                            <li class="list-group-item">A Arte da Culinária Japonesa-pratos quentes:Senac(SP)</li><br>
-                            <li class="list-group-item">Iluminação Resdencial.Senastec(RS)</li><br>
-                        <hr class="hr_03"><br><br>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6 text-center">
-            <div class="card" style="width: 18rem;">
-                <div class="card-header">
-                    <ul class="list-group list-group-flush">
-                          <hr class="hr_dados5"><br><br>
-                          <li class="list-group-item">Considero-me uma pessoa muito sociável,constante e responsável. </li><br>
-                         <li class="list-group-item">Tenho disponibilidade total para o trabalho. </li><br>
-                         <hr class="hr_04">
-                        <div class="font">
-                            <h5>Compartilhar:</h5><br>
-                            <i class="fab fa-linkedin"style="font-size:40px;"></i>
-                            <i class="fab fa-instagram"style="font-size:40px;"></i>
-                            <i class="fab fa-github"style="font-size:40px;"></i>
-                            <i class="fab fa-youtube"style="font-size:40px;"></i>
-                            <i class="fab fa-twitter"style="font-size:40px;"></i>
-                            <i class="fab fa-whatsapp-square"style="font-size:40px;"></i>
-                        </div>
-                    </ul>
-                </div>
+        <div style="width: 18rem;">
+            <hr class="hr_dados5"><br><br>
+                <h4>Considero-me uma pessoa muito sociável,constante e responsável. <br><br>
+                <h4>Tenho disponibilidade total para o trabalho. <br><br>
+                <hr class="hr_05">
+            <div><br>
+                <h3>Compartilhar:<br><br>
+                <i class="fab fa-linkedin"style="font-size:40px;"></i>
+                <i class="fab fa-instagram"style="font-size:40px;"></i>
+                <i class="fab fa-github"style="font-size:40px;"></i>
+                <i class="fab fa-youtube"style="font-size:40px;"></i>
+                <i class="fab fa-twitter"style="font-size:40px;"></i>
+                <i class="fab fa-whatsapp-square"style="font-size:40px;"></i>
             </div>
         </div>
     </div>
